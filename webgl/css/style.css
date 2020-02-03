@@ -1,0 +1,122 @@
+html,
+body {
+	overflow: hidden;
+}
+main {
+    width: 100%;
+    display: flex;
+}
+canvas {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+#particle_data {
+    padding: 10px;
+}
+#holder {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 20%;
+    bottom: 0;
+    border-right: 1px solid black;
+}
+#right_holder {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 20%;
+    bottom: 0;
+}
+#graph{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 50%;
+}
+#particle_data{
+    position: fixed;
+    border-top: 1px black solid;
+    top: 50%;
+    width: 100%;
+}
+article {
+    background-color: white;
+    z-index: 1;
+}
+#button {
+    position: fixed;
+    left: 0;
+    width: 20%;
+    background-color: white;
+    text-decoration: none;
+    border: 1px solid black;
+}
+#gun_button {
+    position: fixed;
+    left: 0;
+    bottom: 240px;
+    width: 20%;
+    background-color: white;
+    text-decoration: none;
+    border: 1px solid black;
+}
+#properties {
+    display: none;
+}
+#gproperties {
+    display: none;
+}
+#delete {
+    margin-right: 20px;
+    margin-top: 20px;
+    background-color: red;
+    border: 1px solid darkred;
+    color: white;
+}
+#console {
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    bottom: 0;
+    width: 60%;
+    left: 20%;
+    height: 100px;
+    background-color: black;
+    z-index: 2;
+    color: white;
+    border: none;
+    padding-bottom: 80;
+}
+#console:focus {
+    outline: none;
+}
+.field {
+    width: 60px;
+}
+
+#run, #clear {
+    position: fixed;
+    bottom: 300px;   
+}
+#table {
+    position: fixed;
+    top: 0;
+    left: 20%;
+    z-index: 2;
+}
+#clear {
+    left: 100px;
+}
+#run {
+    background-color: green;
+    color: white;
+    border: 1px solid darkgreen;
+}
+#clear {
+    background-color: red;
+    color: white;
+    border: 1px solid darkred;
+}

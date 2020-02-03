@@ -1,0 +1,84 @@
+<html>
+
+<head>
+	<title>Geant4 Example</title>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<body onload="InitDemo();">
+	<main>
+		<img src="table.png" alt="table" id="table" width="300" height="130">
+		
+		<input id='console' spellcheck="false"></input>
+		<div class="container">
+			<article id="right_holder">
+				<section>
+					<div id="graph"></div>
+				</section>
+				<section id="particle_data">
+
+				</section>
+			</article>
+			<article id="holder">
+
+				
+				<input type="file" id="myfileinput" style="display: none;" />
+				<input type="button" id="addDetector" value="Add Detector" onclick="document.getElementById('myfileinput').click();" />
+				
+				<input type="file" id="parse" style="display: none;" />
+				<input type="button" id="parse_button" value="Load" onclick="document.getElementById('parse').click();" />
+
+				<input type="file" id="loadScript" style="display: none;" />
+				<input type="button" id="script" value="loadScript" onclick="document.getElementById('loadScript').click();" />
+
+				<button id="export-setup">Export</button>
+
+				
+				<div class="dropdown">
+					<button id="gun_button">
+						Gun
+					</button>
+					<article id="gproperties">
+						position: <br>
+						x: <input class="field" type="number" value="10" id="gunx"> cm
+						y: <input class="field" type="number" value=".5" id="guny"> cm
+						z: <input class="field" type="number" value=".1" id="gunz"> cm<br>
+
+
+						direction: <br>
+						x: <input class="field" type="number" value="-1" id="gundirx">
+						y: <input class="field" type="number" value="0" id="gundiry">
+						z: <input class="field" type="number" value="0" id="gundirz"><br>
+
+						energy: <input class="field" type="number" value=".1" id="energy"> MeV <br>
+						number of particle: <input class="field" type="number" value="1" id="nofp">
+					</article>
+
+					<button id="run" type="button">Run!</button>
+					<button id="clear" type="button">Clear! </button>
+
+
+				</div>
+
+			</article>
+
+			<canvas id="surface">
+				Your browser does not support HTML5
+			</canvas>
+
+		</div>
+
+		<script type="module" src="app.js"></script>
+	</main>
+</body>
+
+</html>
